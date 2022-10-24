@@ -1,0 +1,205 @@
+.primaryColor {
+  color: $primaryColor;
+}
+
+body {
+  font-family: sans-serif;
+  color: #333;
+}
+
+.anticon svg {
+  vertical-align: baseline;
+}
+
+.table-striped td {
+  background-color: #fafafa;
+}
+
+.ant-dropdown-menu-item {
+  &:hover {
+    font-weight: 600;
+    color: $primaryColor !important;
+    background-color: #ebecf8 !important;
+  }
+}
+
+/* 通用的页面样式 */
+.page {
+  height: 100%;
+  width: 100%;
+
+  /* 页面主体 */
+  &_main {
+    padding: 20px;
+    background: #fff;
+  }
+
+  /* 页面操作行 */
+  &_operate {
+    padding: 9px 20px;
+    border-bottom: 1px solid #f0f2f5;
+    background: #fff;
+  }
+}
+
+.page-content {
+  width: 100%;
+  overflow: auto;
+  height: calc(100vh - 215px);
+}
+
+.l-flex-csb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.class-content {
+  height: calc(100vh - 176px);
+
+  .page_main {
+    height: 100%;
+    margin-top: 14px;
+  }
+}
+
+.tar {
+  text-align: right;
+}
+
+.btn-opera {
+  cursor: pointer;
+  color: $primaryColor;
+
+  &:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: $primaryColorHover;
+  }
+
+  &:active {
+    color: $primaryColorActive;
+  }
+}
+
+.flexInput {
+  display: flex;
+
+  .ant-btn {
+    width: 102px;
+    margin-left: 10px;
+  }
+}
+
+.form-class {
+  .ant-select,
+  .ant-input,
+  .ant-input-affix-wrapper,
+  .ant-picker-range {
+    max-width: 420px;
+  }
+
+  /* 复选框 */
+  .ant-checkbox-wrapper {
+    height: 32px;
+  }
+}
+
+/* 密码块 */
+._strength {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 8px;
+
+  .ant-tag {
+    margin-right: 6px;
+    margin-left: 6px;
+    border-radius: 0;
+    font-size: 12px;
+    padding: 0;
+    width: 60px;
+    text-align: center;
+    height: 20px;
+    line-height: 19px;
+  }
+
+  .ant-tag-default {
+    background-color: #f0f0f0;
+    color: #666;
+  }
+}
+
+._strength.is-level1 > span {
+  color: #ff4d4f;
+}
+
+._strength.is-level2 > span {
+  color: #ffae01;
+}
+
+._strength.is-level3 > span {
+  color: #52c41a;
+}
+
+._strength.is-level0 .ant-tag-warning {
+  background-color: #f0f0f0;
+  color: #fff;
+}
+
+._strength.is-level1 .ant-tag-warning {
+  background-color: #ff4d4f;
+  color: #fff;
+}
+
+._strength.is-level2 .ant-tag-warning {
+  background-color: #ffae01;
+  color: #fff;
+}
+
+._strength.is-level3 .ant-tag-warning {
+  background-color: #52c41a;
+  color: #fff;
+}
+
+/* 排序与标题一起居中 */
+.ant-table .ant-table-cell .ant-table-column-sorters {
+  justify-content: center;
+
+  .ant-table-column-title {
+    flex: none;
+    margin-right: 6px;
+  }
+}
+
+/* 抽屉 */
+.drawer-class {
+  .drawer-content {
+    height: calc(100vh - 120px);
+    overflow: auto;
+    padding-right: 12px;
+  }
+
+  .ant-drawer-header {
+    height: 60px;
+    padding-bottom: 19px;
+    padding-top: 19px;
+
+    .ant-drawer-title {
+      font-weight: 600;
+      color: #333;
+    }
+  }
+
+  .ant-drawer-body {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 0;
+  }
+
+  .divider-style {
+    background-color: rgb(0 0 0 / 6%);
+    margin-top: 0;
+    margin-bottom: 9px;
+  }
+}
